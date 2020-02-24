@@ -1,0 +1,24 @@
+﻿<Window x:Class="gridSplitter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:gridSplitter"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" MinWidth="50" MaxWidth="100"/>
+            <ColumnDefinition Width="4*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock Margin="10">Menu</TextBlock>
+        <TextBlock Grid.Column="1" Margin="10">Any free text</TextBlock>
+        <GridSplitter Width="3" Background="Silver" Grid.RowSpan="2"/>
+        <GridSplitter Height="5" Background="Red" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Grid.ColumnSpan="2"/>
+
+    </Grid>
+</Window>
