@@ -1,0 +1,36 @@
+﻿<Window x:Class="radioButtonGroupBoxLabel.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:radioButtonGroupBoxLabel"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+
+        <GroupBox Margin="10">
+            <GroupBox.Header>
+                <Bold>How much do you play computer games per day?</Bold>
+            </GroupBox.Header>
+            <StackPanel>
+                 <RadioButton GroupName="paly">i do not paly</RadioButton>
+                 <RadioButton GroupName="paly">1-3h</RadioButton>
+                 <RadioButton GroupName="paly">3-6h</RadioButton>
+                 <RadioButton GroupName="paly">24h</RadioButton>
+            </StackPanel>
+        </GroupBox>
+
+        <GroupBox Margin="10">
+            <GroupBox.Header>
+                <Bold>How much do you sleep per day?</Bold>
+            </GroupBox.Header>
+            <StackPanel>
+                <RadioButton GroupName="sleep">i do not sleep</RadioButton>
+                <RadioButton GroupName="sleep">3-6h</RadioButton>
+                <RadioButton GroupName="sleep">6-9h</RadioButton>
+                <RadioButton GroupName="sleep">>9h</RadioButton>
+             </StackPanel>
+        </GroupBox>
+        
+    </StackPanel>
+</Window>
