@@ -6,7 +6,10 @@
         xmlns:local="clr-namespace:Canvas"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
+    <Grid Width="300">
+        <Canvas>
+            <Button Content="Button" Height="41" Width="244" Canvas.Left="28" Canvas.Top="217"></Button>
+            <Button Content="Button" Height="41" Width="244" Canvas.Left="28" Canvas.Top="176"></Button>
+        </Canvas>
     </Grid>
 </Window>
